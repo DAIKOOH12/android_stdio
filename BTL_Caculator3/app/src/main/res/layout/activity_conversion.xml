@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Đổi đơn vị đại lượng"
+                android:textSize="20dp"
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/btnCMToM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đổi CM sang M"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnMToKM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đổi m sang kM"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnKGToTa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đổi kg sang tạ"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnKGToTan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đổi kg sang tấn"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Đổi đơn vị thời gian"
+                android:textSize="20dp"
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/btnSecToMi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đổi giây sang phút"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnMiToHo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đổi phút sang giờ"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnSecToHo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đổi giây sang giờ"
+                android:layout_gravity="center"/>
+            <Button
+                android:id="@+id/btnHoToDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đổi giờ sang ngày"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <fragment
+        android:layout_marginTop="10dp"
+        android:id="@+id/resultFragment"
+        android:name="com.example.btl_caculator.ResultFragment"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>
